@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cargo --version)",
+      "Bash(rustup show:*)",
+      "Bash(rustup default:*)",
+      "Bash(cargo init:*)",
+      "Bash(cargo build:*)",
+      "Bash(sudo apt-get:*)",
+      "Bash(pkg-config --libs xkbcommon)",
+      "Bash(pkg-config --libs wayland-client)",
+      "Read(//usr/lib64/**)",
+      "Read(//usr/include/**)",
+      "Read(//usr/**)",
+      "Bash(nix-shell -p libxkbcommon wayland pkg-config --run \"cargo build 2>&1\")"
+    ]
+  }
+}
