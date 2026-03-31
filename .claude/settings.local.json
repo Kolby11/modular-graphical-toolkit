@@ -12,7 +12,8 @@
       "Read(//usr/lib64/**)",
       "Read(//usr/include/**)",
       "Read(//usr/**)",
-      "Bash(nix-shell -p libxkbcommon wayland pkg-config --run \"cargo build 2>&1\")"
+      "Bash(nix-shell -p libxkbcommon wayland pkg-config --run \"cargo build 2>&1\")",
+      "Bash(cargo test:*)"
     ]
   }
 }

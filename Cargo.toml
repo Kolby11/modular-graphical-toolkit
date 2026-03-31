@@ -21,5 +21,8 @@ cosmic-text = "0.12"
 log = "0.4"
 env_logger = "0.11"
 
+# Markup parser
+quick-xml = "0.36"
+
 # Error handling
 anyhow = "1"

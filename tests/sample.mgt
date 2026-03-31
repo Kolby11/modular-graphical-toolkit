@@ -1,0 +1,26 @@
+<script lang="mgt">
+  prop title: String
+  prop subtitle: String?
+  state count: Int = 0
+</script>
+
+<style>
+  .card {
+    bg: bg.elevated;
+    radius: radius.lg;
+    padding: space.md;
+  }
+  .card:hover {
+    bg: bg.elevated.hover;
+  }
+  .title {
+    font: type.title;
+    color: fg.primary;
+  }
+</style>
+
+<Panel class="card">
+  <Label class="title" text="{title}" />
+  <Label text="{subtitle}" color="fg.secondary" />
+  <Button role="primary" label="Count: {count}" on:click="{handle_click}" />
+</Panel>
